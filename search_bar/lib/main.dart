@@ -54,7 +54,7 @@ class FoodItemSearch extends SearchDelegate<FoodItem> {
   Widget? buildLeading(BuildContext context) {
     return IconButton(
         onPressed: () {
-          close(context, null!);
+          close(context, FoodItem(title: "Chocolate Shake", category: "MilkShakes"));
         },
         icon: Icon(Icons.arrow_back));
   }
