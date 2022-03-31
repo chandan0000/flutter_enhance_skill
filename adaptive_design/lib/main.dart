@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-  
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +28,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Slider.adaptive(value: 1, onChanged: (double newValue) {}),
-            SwitchListTile.adaptive(value: true, onChanged: (bool newValue) {
-              
-              
-            }),
+            SwitchListTile.adaptive(value: true, onChanged: (bool newValue) {}),
             Icon(Icons.adaptive.share),
             const CircularProgressIndicator.adaptive()
           ],
